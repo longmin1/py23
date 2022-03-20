@@ -68,4 +68,11 @@ print(d.strip())#去掉首尾空格的my name is longmin
 print(d.rstrip())# my name is longmin--->去掉最右侧的空格
 print(d.lstrip())#my name is longmin ----->去掉最左侧的空格
 
-
+list_a=['a','b','c']
+str_a='adcde'
+str_b='bcde'
+print('a'in list_a)
+print('a' not in list_a)
+print('a'in str_a)
+print('a'not in str_a)
+print('a' in str_b)
