@@ -33,3 +33,38 @@
 # b=set_1.pop()#--->集合随机剔除
 # print(b)
 
+#集合的交集运算
+#可以使用 intersection 也可以使用 &
+# set_1={1,2,3,4,5,7,8,0}
+# set_2={2,5,6,3,4,9}
+# print(set_1.intersection(set_2))#---{2, 3, 4, 5}
+# print(set_1&set_2)#{2, 3, 4, 5}
+
+#集合的并集运算
+#可以使用 union 也可以使用 |
+# set_1={1,2,3,4,5,7,8,0}
+# set_2={2,5,6,3,4,9}
+# print(set_1.union(set_2))
+# print(set_1|set_2)
+
+#集合的差集运算
+#可以使用 difference 也可以使用 -
+# set_1={1,2,3,4,5,7,8,0}
+# set_2={2,5,6,3,4,9}
+# #属于set_1但不属于set_2的集合
+# print(set_1.difference(set_2))
+# print(set_1-set_2)
+
+# set_1=set('hogwartsss')
+# set_2=set('hello world')
+# print(set_1,set_2)
+# print(set_1&set_2)
+
+#集合推导式
+set_x={i if i in 'cccc' else 'wd' for i in 'hogwarts'}
+print(set_x)
+#推导式也可以结合if-else使用
+#但是要把if else放在前面  for循环放在后面
+set_y={ i for i in 'hogwartsss' if i in 'hello world'}
+print(set_y)
+
