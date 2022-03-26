@@ -1,4 +1,7 @@
 '''类方法'''
+
+
+
 class MethodClass:
     CLASS_PARAM=0
 
@@ -77,6 +80,9 @@ class Game:
         print('比赛开始了')
 # Game.game_start()
 
-game_1=Game('bobo','tom')
-game_1.game_start()
-game_1.fight()
+# game_1=Game('bobo','tom')
+# game_1.game_start()
+# game_1.fight()
+from typing import List
+a:List[float]=[]
+a=['1',1,2]
