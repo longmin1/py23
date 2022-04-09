@@ -33,3 +33,19 @@ def test_more_params(num,except_num):
 def test_dkej(wd,code):
     print(wd,code)
 
+# if __name__ == '__main__':
+    # pytest.main()
+    # pytest.main(['test_pytest_lianxi.py::test_dkej','-vs'])
+    # pytest.main(["test_pytest_lianxi.py","-vs","-m","sun"])
+    # pytest.main(["test_pytest_lianxi.py", "-vs", "-k", "dkej"])
+    #其实就是把原本的控制台命令行的每个pytest后面的参数 写到一个列表中，用','隔开，','相当于空格
+
+
+# @pytest.mark.parametrize('x,y,expected',[[1,2,3],[1,5,6]])
+# def test_pytest_excel(x,y,expected):
+#     assert my_add(x,y)==expected
+#     print('ccccss')
+
+
+def test_case124():
+    print('cccc')

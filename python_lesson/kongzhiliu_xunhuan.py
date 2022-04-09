@@ -67,11 +67,11 @@
 #     try:
 #         a=int(input('请输入你猜想的数字： '))
 #     except ValueError:
-#         print("Int, please.")
-#     if type(a)!=int:
-#         print(type(a))
-#         print('输入的要为整数数字')
-#     elif type(a)==int:
+#         print("输入的要为整数数字.")
+#     # if type(a)!=int:
+#     #     print(type(a))
+#     #     print('输入的要为整数数字')
+#     if type(a)==int:
 #         print(type(a))
 #         a=False
 #         print('退出循环拉')
@@ -84,13 +84,13 @@
 
 # list_i=[i for i in range(1,101) if i %2!=0]
 # print(sum(list_i))
-i=0
-a=1
-while a<101:
-    i = i + a
-    a=a+1
-
-print(i)
+# i=0
+# a=1
+# while a<101:
+#     i = i + a
+#     a=a+1
+#
+# print(i)
 
 
 
