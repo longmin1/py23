@@ -48,3 +48,4 @@ def dict_new(dict1:dict)->dict:
     return {v:k for k,v in dict1.items()}
 
 print(dict_new({'a': 1, 'b': 2, 'c': 3}))
+
