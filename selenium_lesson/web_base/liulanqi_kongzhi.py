@@ -1,11 +1,12 @@
 # import time
 #
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 #
-# driver=webdriver.Chrome()
-# driver.get('https://www.testing-studio.com/')
-# driver.maximize_window()
+driver=webdriver.Chrome()
+driver.get('https://www.testing-studio.com/')
+driver.maximize_window()
+driver.minimize_window()#最小化
 # driver.find_element(By.XPATH,'//*[@id="menu-item-927"]/a').click()
 # time.sleep(2)
 # driver.find_element(By.LINK_TEXT,"关于我们").click()
