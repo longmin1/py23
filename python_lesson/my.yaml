@@ -1,0 +1,10 @@
+age: 18
+children:
+- age: 3
+  name: Chen You
+- age: 2
+  name: Ruo Xi
+name: junxi
+spouse:
+  age: 18
+  name: Rui

@@ -1,0 +1,2 @@
+03/29/2022 09:49:14 PM [INFO] 这是使用logging.conf打印的日志  (test_logging_conf.py:5)
+03/29/2022 09:51:02 PM [INFO] 这是使用logging.conf打印的日志  (test_logging_conf.py:5)
