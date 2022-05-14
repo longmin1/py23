@@ -3,7 +3,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import TouchActions
 from selenium.webdriver.remote.webdriver import WebDriver
-
+'''litemall  老的用例没有改造po之前的用例'''
 class Base():
     driver = None
     base_url = ''
