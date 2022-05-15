@@ -35,10 +35,13 @@ class Base():
 
     def wait_by_excepted_ele(self,tips,time=60):
         '''显式等待官方的用法'''
-        WebDriverWait(self.driver, time).until(expected_conditions.element_to_be_clickable(tips))
+        return WebDriverWait(self.driver, time).until(expected_conditions.element_to_be_clickable(tips))
 
     def wait_ele_located(self,tips,time=60):
-        WebDriverWait(self.driver, time).until(expected_conditions.presence_of_element_located(tips))
+        return WebDriverWait(self.driver, time).until(expected_conditions.presence_of_element_located(tips))
 
     def wait_ele_visibilit(self,tips,time=60):
-        WebDriverWait(self.driver, time).until(expected_conditions.visibility_of_element_located(tips))
+        return WebDriverWait(self.driver, time).until(expected_conditions.visibility_of_element_located(tips))
+
+    def quit(self):
+        self.driver.quit()

@@ -32,6 +32,6 @@ class DisposeCookies(Base):
         # return MainPage(self.driver)
 
 
-if __name__ == '__main__':
-    DisposeCookies().save_cookies()
+# if __name__ == '__main__':
+#     DisposeCookies().save_cookies()
     # DisposeCookies().add_cookies('cookies.yml')
