@@ -1,0 +1,2 @@
+[35mDEBUG   [0m simple_example:web_utils.py:21 点击的时候出现了一次异常
+[32mINFO    [0m simple_example:categorypage.py:30 断言获取到的实际结果为[<selenium.webdriver.remote.webelement.WebElement (session="0dbbcdaed7ca1a0c857fd228fc1cc69e", element="74441eeb-de8b-45f4-98bf-8129423666ba")>]
