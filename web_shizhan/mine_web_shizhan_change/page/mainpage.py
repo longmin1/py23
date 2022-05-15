@@ -8,6 +8,8 @@ class MainPage(Base):
     base_url = 'https://work.weixin.qq.com/wework_admin/frame'
 
     def click_address(self,tip,path):
+        '''点击通讯录
+        return 通讯录页面'''
         from .address_page import AddressPage
         with open(path, 'r')as f:
             cookies = yaml.safe_load(f)

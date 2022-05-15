@@ -52,7 +52,7 @@ class AddressPage(Base):
             if self.finds(self.__NEXT_PAGE)!=[]:
                 self.finds(self.__NEXT_PAGE)[0].click()
         result=self.wait_by_fun(func)
-        print(result)
+        # print(result)
         return result
 
     def add_department(self):
@@ -64,6 +64,7 @@ class AddressPage(Base):
         return CreateDepartmentPage(self.driver)
 
     def get_department_result(self):
+        '''判断toast'''
         self.wait_ele_visibilit(self.__TOAST_ELE)
         return self.find(self.__TOAST_ELE).text
 

@@ -13,6 +13,9 @@ class CreateDepartmentPage(Base):
     __SUMIT_BUTTON=(By.XPATH, '//a[@d_ck ="submit"]')
 
     def create_departemnt_name(self):
+        '''添加部门
+        选择未知名部门分类
+        确认后 return 通讯录页面'''
         self.find(self.__DEPARTMENT_NAME).send_keys('搬砖部门')
         self.find(self.__CLICK_DEPARTMENT).click()
         self.finds(self.__SELECT_DEPARTMENT)[1].click()
