@@ -20,8 +20,8 @@ class Base():
             self.driver = driver
             self.action = TouchActions(self.driver)
 
-        # if self.base_url != '':
-        #     self.driver.get(self.base_url)
+        if self.base_url != '':
+            self.driver.get(self.base_url)
 
 
     def find(self,tip):
