@@ -14,6 +14,8 @@ class AddressPage(Base):
     __CLICK_PLUS_SIGN=(By.CSS_SELECTOR,'.member_colLeft_top_addBtnWrap.js_create_dropdown')
     __ADD_DEPARTMENT=(By.CSS_SELECTOR, '.js_create_party')
     __TOAST_ELE=(By.CSS_SELECTOR,'#js_tips')
+    __NAME_LIST=(By.CSS_SELECTOR,'.member_colRight_memberTable_td:nth-child(2)')
+    __NEXT_PAGE=(By.CSS_SELECTOR,'.ww_pageNav_info .js_next_page')
 
     def random_data(self):
         fake=Faker(locale="zh_CN")
@@ -40,13 +42,13 @@ class AddressPage(Base):
         a=self.add_member()
         print(a)
         def func(x):
-            eles=self.finds((By.CSS_SELECTOR,'.member_colRight_memberTable_td:nth-child(2)'))#两种方式一样的  都是获取名字的列表所有值
+            eles=self.finds(self.__NAME_LIST)#两种方式一样的  都是获取名字的列表所有值
             for ele in eles:
                 if ele.get_attribute('title')==a:
                     return ele.get_attribute('title')
             sleep(2)
-            if self.finds((By.CSS_SELECTOR,'.ww_pageNav_info .js_next_page'))!=[]:
-                self.finds((By.CSS_SELECTOR,'.ww_pageNav_info .js_next_page'))[0].click()
+            if self.finds(self.__NEXT_PAGE)!=[]:
+                self.finds(self.__NEXT_PAGE)[0].click()
         result=self.wait_by_fun(func)
         print(result)
         return result
