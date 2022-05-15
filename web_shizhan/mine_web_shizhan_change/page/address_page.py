@@ -25,6 +25,7 @@ class AddressPage(Base):
 
 
     def add_member(self):
+        '''添加成员'''
         self.random_data()
         self.wait_by_excepted_ele(self.__ELE_ADD_MEMBER)
         self.find(self.__ELE_ADD_MEMBER).click()
@@ -39,6 +40,7 @@ class AddressPage(Base):
 
 
     def get_member(self):
+        '''获取成员列表中是否有刚刚所添加的成员的名字信息'''
         a=self.add_member()
         print(a)
         def func(x):
