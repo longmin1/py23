@@ -21,6 +21,7 @@ class TestXueqiu():
         # desired_caps['skipDeviceInitialization']='true'
         desired_caps['unicodeKeyBoard']='true'
         desired_caps['resetKeyBoard']='true'
+        desired_caps['noReset']='true'#不需要清空缓存的时候可以加上这个
         self.driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
         self.driver.implicitly_wait(10)
     def teardown(self):
