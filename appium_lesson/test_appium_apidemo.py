@@ -32,6 +32,7 @@ class TestApidemo():
         self.driver.find_element(By.XPATH, "//*[@text='Morse Code']").click()
         self.driver.find_element(By.XPATH,'//*[@resource-id="com.touchboarder.android.api.demos:id/text"]').send_keys('这是一个测试')
         self.driver.save_screenshot('./pic.PNG')
+        
         self.driver.back()
         time.sleep(1)
         self.driver.back()
