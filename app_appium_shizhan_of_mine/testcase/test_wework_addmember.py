@@ -6,7 +6,7 @@ class TestWework():
     def setup(self):
         self.main=MainPage()
     def teardown(self):
-        pass
+        self.main.quit()
     def test_addmember(self):
         toast=self.main.click_addresslist().click_add_member().click_add().input_member().get_toast()
         logger.info(f'获取到的toast信息为:{toast}')

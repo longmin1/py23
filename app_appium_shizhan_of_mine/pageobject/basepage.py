@@ -25,6 +25,9 @@ class BasePage():
             # self.driver.launch_app()
         self.driver.implicitly_wait(10)
 
+    def quit(self):
+        self.driver.quit()
+
     def scroll_wait_ele(self,location):
         '''滑动寻找某元素'''
         while True:
