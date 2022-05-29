@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from app_appium_shizhan_of_mine.pageobject.basepage import BasePage
+from app_appium_shizhan_of_mine_第一节.pageobject.basepage import BasePage
 
 
 class InputAddMemberPage(BasePage):
@@ -9,6 +9,6 @@ class InputAddMemberPage(BasePage):
         self.driver.find_element(By.XPATH,'//*[@text="姓名　"]/..//*[@resource-id="com.tencent.wework:id/bf6"]').send_keys('小花')
         self.driver.find_element(By.XPATH, '//*[@text="手机　"]/..//*[@resource-id="com.tencent.wework:id/ge0"]').send_keys(13882993456)
         self.driver.find_element(By.XPATH,'//*[@text="保存"]').click()
-        from app_appium_shizhan_of_mine.pageobject.addmemberpage import AddMemberPage
+        from app_appium_shizhan_of_mine_第一节.pageobject.addmemberpage import AddMemberPage
         return AddMemberPage(self.driver)
 

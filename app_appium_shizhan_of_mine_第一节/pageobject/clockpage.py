@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from app_appium_shizhan_of_mine.pageobject.basepage import BasePage
+from app_appium_shizhan_of_mine_第一节.pageobject.basepage import BasePage
 
 class ClockPage(BasePage):
 

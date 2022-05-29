@@ -1,5 +1,5 @@
-from app_appium_shizhan_of_mine.pageobject.mainpage import MainPage
-from app_appium_shizhan_of_mine.until.log_until import logger
+from app_appium_shizhan_of_mine_第一节.pageobject.mainpage import MainPage
+from app_appium_shizhan_of_mine_第一节.until.log_until import logger
 
 
 class TestWework():
