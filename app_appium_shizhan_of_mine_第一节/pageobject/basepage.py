@@ -37,7 +37,7 @@ class BasePage():
             self.scroll()
 
     def scroll(self):
-        '''从下网上滑动'''
+        '''从下往上滑动'''
         win_sizes = self.driver.get_window_size()
         win_sizes_width = win_sizes['width']
         win_sizes_height = win_sizes['height']
