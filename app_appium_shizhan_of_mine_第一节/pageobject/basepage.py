@@ -28,6 +28,25 @@ class BasePage():
     def quit(self):
         self.driver.quit()
 
+    def finds(self, by, locator=None):
+        """获取多个元素"""
+        if locator:
+            return self.driver.find_elements(by, locator)
+        else:
+            return self.driver.find_elements(*by)
+
+    def find(self,by,locator=None):
+        if locator:
+            return self.driver.find_element(by,locator)
+        else:
+            return self.driver.find_element(*by)
+
+    def clear_and_send_keys(self, value, by, locator=None):
+        ele = self.find(by, locator)
+        ele.clear()
+        ele.send_keys(value)
+
+
     def scroll_wait_ele(self,location):
         '''滑动寻找某元素'''
         while True:

@@ -8,7 +8,7 @@
 from appium import webdriver
 from appium.webdriver.extensions.android.gsm import GsmCallActions
 from time import sleep
-
+import os
 def test_testcase():
     '''我用真机报错 我没有运行成功'''
 
@@ -17,15 +17,14 @@ def test_testcase():
     desired_caps['platformVersion'] = '10'
     desired_caps['deviceName'] = '77fc05f5'
     # desired_caps['udid']='77fc05f5'
-
-
-    desired_caps['appPackage'] = 'com.youdao.dict'
-    desired_caps['appActivity'] = '.activity.account.LoginActivity'
+    desired_caps['appPackage'] = 'com.tencent.wework'
+    desired_caps['appActivity'] = '.launch.LaunchSplashActivity'
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
     '''录屏'''
+    os.system('adb shell am start -a android.intent.action.CALL -d tel:15602462915')
     # driver.start_recording_screen()
     # '''模拟来电'''
-    # driver.make_gsm_call('5551234567',GsmCallActions.CALL)
+    # driver.make_gsm_call('5551234567',GsmCallActions.CALL)#这个方法只适用android模拟器
     # '''模拟来短信'''
     # driver.send_sms('15602462915','我爱你，宝宝')
     # '''截图切换网络'''
