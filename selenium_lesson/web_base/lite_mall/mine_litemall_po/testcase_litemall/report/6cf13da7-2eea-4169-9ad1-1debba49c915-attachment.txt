@@ -1,1 +1,0 @@
-[35mDEBUG   [0m simple_example:web_utils.py:21 点击的时候出现了一次异常

@@ -1,5 +1,3 @@
-import os
-import sys
 
 from app_appium_shizhan_of_mine_第一节.pageobject.mainpage import MainPage
 from app_appium_shizhan_of_mine_第一节.until.log_until import logger

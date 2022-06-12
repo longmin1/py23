@@ -1,3 +1,0 @@
-2022-04-25 16:12:20 [INFO] 开始查找元素：com.xueqiu.android:id/post_status (black_handle.py:42)
-2022-04-25 16:12:54 [WARNING] 未找到元素，处理导演  (black_handle.py:45)
-2022-04-25 16:12:54 [INFO] 当前保存图片的路径 >>>/Users/juanxu/Documents/霍格沃兹培训/测试demo/PytestLuboProject/app_demo1/app_PODEMO1/base (black_handle.py:50)
