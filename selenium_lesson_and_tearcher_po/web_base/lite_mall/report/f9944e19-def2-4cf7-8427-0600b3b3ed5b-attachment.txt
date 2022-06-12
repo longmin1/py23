@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_old_litemall.py:86 断言获取到的实际结果为[<selenium.webdriver.remote.webelement.WebElement (session="1c67306a98473fcfdb428e5dc37a5e92", element="78b5c152-7bb3-4dd9-bb8d-1267804b4136")>, <selenium.webdriver.remote.webelement.WebElement (session="1c67306a98473fcfdb428e5dc37a5e92", element="fafa3d07-96bc-4c42-b69e-eecb14531f4f")>]
