@@ -40,6 +40,7 @@ class TestBrowser():
         # self.driver.find_element(MobileBy.ACCESSIBILITY_ID,'i am a link').click()
         # print(self.driver.page_source)
         print(self.driver.contexts)
+
         self.driver.switch_to.context(self.driver.contexts[-1])
         self.driver.find_element(MobileBy.ID, 'i_am_a_textbox').send_keys("this is a test string use chrome inspect")
         self.driver.find_element(MobileBy.ID,'i am a link').click()

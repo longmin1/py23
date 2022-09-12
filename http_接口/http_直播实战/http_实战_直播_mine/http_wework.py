@@ -29,7 +29,6 @@ class TestWework():
 
     def test_create_department(self):
         '''创建部门'''
-        headers= {'Content-Type':'application/json','Charset':'utf-8'}
         params = {'access_token': self.access_token}
         json_data = {
             "name": "0703研发中心917",
@@ -38,8 +37,7 @@ class TestWework():
             "order": 1,
             "id": 917
         }
-        res = requests.post(url=self.url + '/department/create', headers=headers,json=json_data, params=params)
-        # res = requests.post(url=self.url + '/department/create', json=json_data, params=params)
+        res = requests.post(url=self.url + '/department/create', json=json_data, params=params)
         logger.debug(f'新增部门的返回值：{res.json()}')
         print('jsonpath的结果是：' + jsonpath(res.json(), '$.errmsg')[0])
         assert res.json()['errmsg'] == 'created'
@@ -59,9 +57,3 @@ class TestWework():
         res = requests.post(self.url + '/department/update', params=params, json=json_data)
         logger.debug(f'更新部门的返回值：{res.json()}')
         assert res.json()['errmsg'] == "updated"
-
-    # def test_del_department(self):
-    #     params = {'access_token': self.access_token,'id':'917'}
-    #     res = requests.get(url=self.url+'/department/delete',params=params)
-    #     # print(res.json())
-    #     logger.debug(f'删除的结果是：{res.json()}')

@@ -12,7 +12,7 @@ s='Hogwarts school,i love hogwarts'
 result=re.findall(pattern,s,re.I)
 print(result)
 
-s1='today i am in hogwarts xx hogwarts  hogwarts'
+s1='today i am in hogwarts 测试平台开发-后端 hogwarts  hogwarts'
 result1=re.findall(pattern,s1,re.I)
 print(result1)
 
